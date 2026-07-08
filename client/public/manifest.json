@@ -1,0 +1,87 @@
+{
+  "name": "GraphAI - Intelligent Graph Analysis",
+  "short_name": "GraphAI",
+  "description": "AI-powered graph and forex chart analysis with unlimited Q&A. Analyze any chart instantly on your phone.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#1e293b",
+  "background_color": "#0f172a",
+  "categories": ["finance", "productivity", "utilities"],
+  "screenshots": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 540 720'><rect fill='%231e293b' width='540' height='720'/><text x='270' y='360' font-size='48' fill='%233b82f6' text-anchor='middle' dominant-baseline='middle'>GraphAI</text></svg>",
+      "sizes": "540x720",
+      "type": "image/svg+xml",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1280 720'><rect fill='%231e293b' width='1280' height='720'/><text x='640' y='360' font-size='72' fill='%233b82f6' text-anchor='middle' dominant-baseline='middle'>GraphAI</text></svg>",
+      "sizes": "1280x720",
+      "type": "image/svg+xml",
+      "form_factor": "wide"
+    }
+  ],
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%231e293b' width='192' height='192' rx='45'/><circle cx='96' cy='96' r='60' fill='%233b82f6'/><path d='M70 110 L85 70 L100 90 L115 60 L130 110' stroke='%23ffffff' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%233b82f6' width='192' height='192' rx='45'/><path d='M70 110 L85 70 L100 90 L115 60 L130 110' stroke='%23ffffff' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect fill='%231e293b' width='512' height='512' rx='120'/><circle cx='256' cy='256' r='160' fill='%233b82f6'/><path d='M180 290 L220 180 L260 240 L300 140 L340 290' stroke='%23ffffff' stroke-width='8' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Start Analyzing",
+      "short_name": "Analyze",
+      "description": "Upload a graph and start analysis",
+      "url": "/analyzer",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'><rect fill='%233b82f6' width='96' height='96' rx='20'/><path d='M35 55 L45 35 L55 45 L65 30 L75 55' stroke='%23ffffff' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "View Sessions",
+      "short_name": "Sessions",
+      "description": "View your analysis history",
+      "url": "/analyzer",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'><rect fill='%238b5cf6' width='96' height='96' rx='20'/><rect x='20' y='20' width='56' height='56' rx='4' fill='none' stroke='%23ffffff' stroke-width='2'/><line x1='30' y1='35' x2='66' y2='35' stroke='%23ffffff' stroke-width='2'/><line x1='30' y1='48' x2='66' y2='48' stroke='%23ffffff' stroke-width='2'/><line x1='30' y1='61' x2='50' y2='61' stroke='%23ffffff' stroke-width='2'/></svg>",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ],
+  "share_target": {
+    "action": "/analyzer",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "files": [
+        {
+          "name": "graph",
+          "accept": ["image/*"]
+        }
+      ]
+    }
+  }
+}
